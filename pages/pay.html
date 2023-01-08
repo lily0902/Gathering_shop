@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳畫面(購買方式+確認資料)</title>
+    <link rel="stylesheet" href="../assets/css/pay.css">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }s
+            }).scroll();
+        });
+        </script>
+    
+    
+    
+</head>
+<body>
+    <header class="tittle" >
+      <a href="login.html" style="text-decoration:none;">
+        <div class="tbutton1">
+            <img src="../assets/image/profile.png" class="timg1">
+        </div>
+    </a>
+            <a href="index.html" style="text-decoration:none;">
+              <div class="shop">
+                  <img src="../assets/image/puzzle.png" class="logo">
+                  <div class="shopname">Gathering</div>
+              </div>
+          </a>
+          <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+            <div class="tbutton3" style="top:-27px;">
+                <img src="../assets/image/search.png" class="timg3">
+                <input type="text" class="search" value="請輸入關鍵字">
+            </div>
+            
+            <div class="dropdown">
+                <p>關於</p>
+                <div class="dropdown-content">
+                  <a href="introduce.html">商店</a>
+                  <a href="engineers.html">工程師介紹</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>類別</p>
+                <div class="dropdown-content">
+                  <a href="Tom_Parker.html">Tom Parker</a>
+                  <a href="Antelope.html">Antelope</a>
+                  <a href="Martin_Forward.html">Martin Handford</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>會員</p>
+                <div class="dropdown-content">
+                  <a href="login.html">登入/註冊</a>
+                  <a href="member.html">會員資訊</a>
+                  <a href="collect.html">我的收藏</a>
+                </div>
+            </div>
+            <a href="questions.html" style="text-decoration:none;">
+              <div class="dropdown">
+                  <p>常見問題</p>
+              </div>
+            </a>
+    </header>
+    <div class="gototop" id="BackTop">
+        <p>回頂端</p>
+        <img src="../assets/image/puzzle.png" class="gototopp">
+    </div>
+
+<h1><b>結帳 Check Out</b></h1>
+<div class="line"></div>
+
+
+<div class="checkarea">
+      <div class="checktitle">
+        <span><b>確認購物車&nbsp&nbsp</b></span>
+      </div>
+      <div>
+      <div class="line2"></div>
+      <!-- 第一項商品 -->
+        <div class="product">
+          <div class="picture">
+            <img src="../assets/image/tom01.png">
+          </div>
+          <div class="name">
+            <div class="n2">
+              拼圖一號
+            </div>
+            <div class="n3">
+              這是拼圖
+            </div>
+            <div class="price">
+              $870
+            </div>
+          </div>
+          <!-- 第一項商品數量輸入 -->
+          <div class="qt">
+              <input type="button" class="minus" value="-" style="cursor:pointer;">
+              <input type="text" class="num" value="1">
+              <input type="button" class="add" value="+" style="cursor:pointer;">
+          </div>
+          <div class="delete">
+            刪除
+          </div>
+        </div>
+       </div>
+       <div>
+        <div class="line2"></div>
+        <!-- 第二項商品 -->
+        <div class="product">
+          <div class="picture">
+            <img src="../assets/image/tom01.png">
+          </div>
+          <div class="name">
+            <div class="n2">
+              拼圖二號
+            </div>
+            <div class="n3">
+              這是拼圖二號
+            </div>
+            <div class="price">
+              $10000000
+            </div>
+          </div>
+          <!-- 第二項商品數量輸入 -->
+          <div class="qt">
+            <input type="button" class="minus" value="-">
+            <input type="text" class="num" value="1">
+            <input type="button" class="add" value="+" >
+             </div>
+          <div class="delete">
+            刪除
+          </div>
+        </div>
+        </div>
+        <div class="line2"></div>
+        <div class="totalprice">
+            <span><b>總金額&nbsp&nbsp</b></span>$1234
+          </div>
+          <div class="line2"></div>
+
+    </div>
+    <div class="checkarea">
+        <div class="checktitle">
+            <span><b>確認購買資料&nbsp&nbsp</b></span>
+          </div>
+          <div class="line2"></div>
+          <!-- 輸入取貨人姓名 -->
+        <ul>
+          <b>取貨人姓名</b>
+          <input type="text" style="padding: 15px; width: 350px;" name="username" value="" size="20" autofocus placeholder="輸入收件人姓名"/>
+        </ul>
+        <!-- 輸入取貨人電話 -->
+        <ul>
+            <b>取貨人聯絡電話</b>
+            <input type="text" style="padding:15px; width:300px" name="buyerphone" value="" size="20" autofocus placeholder="輸入收件人電話">
+        </ul>
+        <!-- 選擇怎麼付錢跟領貨 -->
+        <ul>
+            <b>付款方式</b>
+            <select size="1" name="payway" style="padding:10px; width: 100px;">
+              <option>匯款</option>
+              <option>貨到付款</option>
+            </select>
+            <b>選擇取貨方式</b>
+            <select size="1" name="package" style="padding:10px;width: 100px;">
+              <option>7-11</option>
+              <option>全家</option>
+              <option>萊爾富</option>
+              <option>OK</option>
+              <option>宅配</option>
+            </select>
+        </ul>
+        <!-- 輸入宅配的地址 -->
+        <ul>
+            <b>收貨地址</b>
+            <input type="text" style="padding: 15px; width: 370px;" name="username" value="" size="20" autofocus placeholder="輸入收貨地址"/>
+        </ul>
+        <div class="line2"></div>
+      <!-- 送出紐以及重填紐-->
+        <ul>
+          <input type="submit" value="送出訂單資料" style="padding:10px;font-size: 18px; width:100px; height: 30px; line-height: 30px; background-color: #003060; border-radius: 5px;left:-27px; color:white; cursor:pointer;">
+          <input type="reset" value="更改訂單資料" style="padding:10px;font-size: 18px; width:100px; height: 30px; line-height: 30px; background-color: #003060; border-radius: 5px;left:-27px; color:white; cursor:pointer;" >     
+        </ul>
+    </div>     
+   
+
+
+
+<footer>
+    <p>© 2022 by Gathering</p>
+</footer>
+</div>
+</body>
+</html>

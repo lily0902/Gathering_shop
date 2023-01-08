@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入畫面</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }s
+            }).scroll();
+        });
+        </script>
+    
+    
+    
+</head>
+<body>
+    <header class="tittle" >
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2" style="top:-135px;">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <div class="tbutton3" style="top:-27px;">
+            <img src="../assets/image/search.png" class="timg3">
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+              <a href="introduce.html">商店</a>
+              <a href="engineers.html">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+              <a href="Tom_Parker.html">Tom Parker</a>
+              <a href="Antelope.html">Antelope</a>
+              <a href="Martin_Forward.html">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+                <a href="login.html">登入/註冊</a>
+                <a href="member.html">會員資訊</a>
+                <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+</header>
+<div class="gototop" id="BackTop">
+    <p>回頂端</p>
+    <img src="../assets/image/puzzle.png" class="gototopp">
+</div>
+    
+    <ul><h1><b>會員登入</b></h1></ul>
+    <form method="post" action="">
+        <!-- 輸入帳號 -->
+       <ul>
+          <b>帳號:</b>
+          <input type="text" name="user_name" style="padding: 8px;" placeholder="請輸入手機號碼或email" maxlength="10"  size="25"/></br>
+       </ul>
+       <!-- 輸入密碼 -->
+       <ul>
+          <b>密碼: </b>
+          <input type="password" name="password" style="padding: 8px;" placeholder="5-15位英數字" maxlength="15" size="25"/>
+          <a ></a>
+        <!-- 登入鈕 -->
+       </ul>
+        <ul class="submit">
+            <input type="submit" value="登入" style="font-size: 18px; width:100px; height: 30px; line-height: 30px; background-color: #ccc; border-radius: 5px; cursor:pointer;" />
+       </ul>
+     </form>
+    <!-- 註冊新會員跟忘記密碼 -->
+    <ul>
+       <div class="form__link">
+        <a class="" href="register.html">註冊新會員</a>
+        <i>|</i>
+        <a class="" href="">忘記密碼</a>
+      </div>
+    </ul>
+    
+</body>
+<footer> 
+    <p>© 2022 by Gathering</p>
+</footer>
+</html> 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工程師介紹</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/engineers.css">
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <!-- 最上面很粗的那條 -->
+    <header class="tittle" >
+        <!-- 右上角的會員按鈕 -->
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <!-- 左上角的Logo跟gathering -->
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        <!-- 購物車按鈕 -->
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <!-- 搜尋欄 -->
+        <div class="tbutton3">
+            <!-- 搜尋按鈕 -->
+            <img src="../assets/image/search.png" class="timg3">
+            <!-- 輸文字的框框 -->
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        <!-- 下拉選單 -->
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+                <a href="introduce.html" style="text-decoration:none;">商店</a>
+                <a href="engineers.html" style="text-decoration:none;">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+                <a href="Tom_Parker.html"style="text-decoration:none;">Tom Parker</a>
+                <a href="Antelope.html"style="text-decoration:none;">Antelope</a>
+                <a href="Martin_Forward.html"style="text-decoration:none;">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+                <a href="login.html">登入/註冊</a>
+                <a href="member.html">會員資訊</a>
+                <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+    </header>
+    
+    <!-- 右下拼圖，按了會回到最上面 -->
+    <div class="gototop" id="BackTop">
+        <p>回頂端</p>
+        <img src="../assets/image/puzzle.png" class="gototopp">
+    </div>
+    <section>
+        <h1 style="text-align:center; font-size:60px;">工程師介紹</h1>
+        <div class="line"></div>
+        <div class="engineersarea">
+            <div style="left:-300px;">
+                <p style="font-size:40px; text-align:left; left:-60px; color: #000;">前端:</p>
+
+                    <div style="float:left; top:-40px;">
+                        <div class="wrapper" style="left:-170px; ">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/嘉唯.jpg" style="left:45px; margin-top:10px;"><b><p style="text-align:center;">陳嘉唯</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 50px;;"><b>我是資管二甲的陳嘉唯
+                                這次前端網頁製作，遇上了許多困難，例如bootstrap的套版讓我們的網頁跑版，網頁設計與理想不同…等等。但也在每一次經驗中學習到了解決事情的能力，雖然仍舊有許多解決不了的問題，但我相信只要夠努力，每一次的實作一定會比上一次更好。</b></p></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrapper" style="left:270px;">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/鈺晏.jpg" style="left:45px; margin-top:10px;"><b><p style="text-align:center;">黃鈺晏</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 45px;;"><b>我哈囉！我是資管二甲的黃鈺晏 這次負責的是會員登入、註冊以及結帳畫面 在這次的專案裡我學習到很多很有趣的事情 也讓我願意去學習更多有關多媒體程式的知識 因為多媒體真的好好玩 打一些程式上去 就可以跑出好看的頁面 真的超酷 希望以後有機會還能夠再接觸到這一塊的東西( ´▽｀)</b></p></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="wrapper" style="left:710px; top:-840px;">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/莉玟.jpg" style="left:45px; margin-top:10px;"><b><p style="text-align:center;">邱莉玟</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 50px;;"><b>大家好，我是資管二甲的邱莉玟，興趣是打排球跟聽音樂。這學期是我第一次接觸前端，撰寫的過程中遇到很多困難，不過最後還是迎刃而解了，我也學習到很多有關前端的知識。或許第一次的經驗不太好，但我相信多寫幾次我也可以更快更簡約的寫出我想要的東西。</b></p></div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+            <div style="left:-300px; top:-1100px;">
+                <p style="font-size:40px; text-align:left; left:-60px; color: #000;">後端:</p>
+
+                    <div style="float:left; top:-40px;">
+                        <div class="wrapper" style="left:-170px; ">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/宜樺.jpg" style="left:45px; margin-top:10px;"><b><p style="text-align:center;">張宜樺</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 50px;;"><b>我是資管二乙 張宜樺，平常興趣:看漫畫、打排球，雖然程式設計真心困難，但是經過這次後端寫程式後，帶來的是滿滿的成就感，因為當遇到困難去突破的過程是非常有價值的。</b></p></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrapper" style="left:270px;">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/苡臻.jpg" style="left:5px; margin-top:10px;"><b><p style="text-align:center;">林苡臻</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 45px;;"><b>這是第一次以兩班合作方式架設一個購物網站，雖然時間緊迫，經常熬夜竭盡所能的趕專題，但也越挫越勇，希望下次能做的更好！</b></p></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="wrapper" style="left:710px; top:-840px;">
+                          <div class="flipper" style="margin: auto">
+                            <div class="front"><img src="../assets/image/思妤.jpg" style="left:45px; margin-top:10px;"><b><p style="text-align:center;">陳思妤</p></b></div>
+                            <div class="back"><p style="font-size:25px; text-align:left; color:black; line-height: 50px;;"><b>我是資管二乙陳思妤，這次擔任的工作是後端程式，興趣是:看小說、彈鋼琴。希望可以做出成品來呈現給大家，做到後期真的發現自己有很多不足的地方，加上越快到報告時間，心越慌，每天都在擔心我們的程式，真希望經過這次的磨練，可以繼續增進自己。</b></p></div>
+                          </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+    </section>
+
+    <footer><p> © 2022 by Gathering</p></footer>
+
+</body>
+
+</html>

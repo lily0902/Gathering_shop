@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消費紀錄</title>
+    <link rel="stylesheet" href="../assets/css/shopping_record.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <header class="tittle" >
+        <!-- 右上角的會員按鈕 -->
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <!-- 左上角的Logo跟gathering -->
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        <!-- 購物車按鈕 -->
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2" style="top:-135px;">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <!-- 搜尋欄 -->
+        <div class="tbutton3">
+            <!-- 搜尋按鈕 -->
+            <img src="../assets/image/search.png" class="timg3">
+            <!-- 輸文字的框框 -->
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        <!-- 下拉選單 -->
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+                <a href="introduce.html" style="text-decoration:none;">商店</a>
+                <a href="engineers.html" style="text-decoration:none;">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+                <a href="Tom_Parker.html"style="text-decoration:none;">Tom Parker</a>
+                <a href="Antelope.html"style="text-decoration:none;">Antelope</a>
+                <a href="Martin_Forward.html"style="text-decoration:none;">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+                <a href="login.html">登入/註冊</a>
+                <a href="member.html">會員資訊</a>
+                <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+    </header>
+    
+    <!-- 右下拼圖，按了會回到最上面 -->
+    <div class="gototop" id="BackTop">
+        <p>回頂端</p>
+        <img src="../assets/image/puzzle.png" class="gototopp">
+    </div>
+    <section>
+        <h1 style="text-align:center; font-size:50px;">消費紀錄</h1>
+        <div class="line"></div>
+        <div class="orderarea" style="margin-bottom:20px;">
+            <table class="ordertable">
+                <tr class="ordertittle">
+                    <td>訂購日期</td>
+                    <td>會員姓名</td>
+                    <td>訂購序號</td>
+                    <td colspan="3">訂購商品</td>
+                    <td>總金額</td>
+                    <td>運送方式</td>
+                    
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>
+                       邱莉玟
+                    </td>
+                    <td>
+                        PC0001
+                    </td>
+                    <ul>
+                        <td><img src="../assets/image/puzzle1.jpg" ></td>
+                        <td><p style="left:0px;">商品名</p></td>
+                        <td><p style="color:red;">NT$350x2</p></td>
+                    </ul>
+                    <td>NT$700</td>
+                    <td>宅配</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>
+                       邱莉玟
+                    </td>
+                    <td>
+                        PC0001
+                    </td>
+                    <ul>
+                        <td><img src="../assets/image/puzzle1.jpg" ></td>
+                        <td><p style="left:0px;">商品名</p></td>
+                        <td><p style="color:red;">NT$350x2</p></td>
+                    </ul>
+                    <td>NT$700</td>
+                    <td>宅配</td>
+                </tr>
+                <tr>
+                    <td>時間</td>
+                    <td>
+                       邱莉玟
+                    </td>
+                    <td>
+                        PC0001
+                    </td>
+                    <ul>
+                        <td><img src="../assets/image/puzzle1.jpg" ></td>
+                        <td><p style="left:0px;">商品名</p></td>
+                        <td><p style="color:red;">NT$350x2</p></td>
+                    </ul>
+                    <td>NT$700</td>
+                    <td>宅配</td>
+                </tr>
+                
+            </table>   
+        </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antelope的作品</title>
+    <link rel="stylesheet" href="../assets/css/Antelope.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <header class="tittle" >
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <div class="tbutton3">
+            <img src="../assets/image/search.png" class="timg3">
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+              <a href="introduce.html" style="text-decoration:none;">商店</a>
+              <a href="engineers.html" style="text-decoration:none;">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+              <a href="Tom_Parker.html"style="text-decoration:none;">Tom Parker</a>
+              <a href="Antelope.html"style="text-decoration:none;">Antelope</a>
+              <a href="Martin_Forward.html"style="text-decoration:none;">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+              <a href="login.html">登入/註冊</a>
+              <a href="member.html">會員資訊</a>
+              <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+</header>
+<div class="gototop" id="BackTop">
+    <p>回頂端</p>
+    <img src="../assets/image/puzzle.png" class="gototopp">
+</div>
+    <div class="p2">
+        <h1 ><b>Antelope 的作品</b></h1>
+    </div>
+    <div style="background-color:pink; width:1500px; margin-left:auto; margin-right:auto; left:150px; bottom: 40px;">
+        <div class="p1">
+            <a href="antelope01.html"><img src="../assets/image/puzzle1.jpg" class="pimg1"></a>
+            <p class="ppp1">不知名的書報攤</p>
+            <p class="ppp2">NT$890</p>
+            <!-- 加入購物車按鈕 -->
+            <img src="../assets/image/carts.png" class="pimg2">
+            <!-- 愛心收藏 -->
+            <input type="button" value="&#10084;"class="like">
+        </div>
+        <div class="p1">
+            <a href="antelope02.html"><img src="../assets/image/antelope02.png" class="pimg1"></a>
+            <p class="ppp1">在奧賽博物館的時間旅行</p>
+            <p class="ppp2">NT$1100</p>
+            <!-- 加入購物車按鈕 -->
+            <img src="../assets/image/carts.png" class="pimg2">
+            <!-- 愛心收藏 -->
+            <input type="button" value="&#10084;"class="like">
+        </div>
+        <div class="p1">
+            <a href="antelope03.html"><img src="../assets/image/antelope0003.png" class="pimg1"></a>
+            <p class="ppp1">夜間小船</p>
+            <p class="ppp2">NT$890</p>
+            <!-- 加入購物車按鈕 -->
+            <img src="../assets/image/carts.png" class="pimg2">
+            <!-- 愛心收藏 -->
+            <input type="button" value="&#10084;"class="like">
+        </div>
+        <div class="p1">
+            <a href="antelope04.html"><img src="../assets/image/antelope04.png" class="pimg1"></a>
+            <p class="ppp1">秋天的亞爾</p>
+            <p class="ppp2">NT$890</p>
+            <!-- 加入購物車按鈕 -->
+            <img src="../assets/image/carts.png" class="pimg2">
+            <!-- 愛心收藏 -->
+            <input type="button" value="&#10084;"class="like">
+        </div>
+        <div class="p1">
+            <a href="antelope05.html"><img src="../assets/image/antelope005.png" class="pimg1"></a>
+            <p class="ppp1">Pablo Picasso In His Studio</p>
+            <p class="ppp2">NT$710</p>
+            <!-- 加入購物車按鈕 -->
+            <img src="../assets/image/carts.png" class="pimg2">
+            <!-- 愛心收藏 -->
+            <input type="button" value="&#10084;"class="like">
+        </div>
+    </div>
+    <footer><p> © 2022 by Gathering</p></footer>
+</body>
+</html>

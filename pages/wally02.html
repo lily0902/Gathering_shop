@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海盜船</title>
+    <link rel="stylesheet" href="../assets/css/order.css">
+    <meta name="viewport" content="width=device-width">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+
+            
+        function showAElement(e) {
+            var a= document.getElementById("report");
+            window.confirm('是否要檢舉他的不當言論?');
+            if (confirm('是否要檢舉他的不當言論?') == true) {
+                window.prompt("為何檢舉這篇留言?");
+                window.alert('檢舉成功，我們將進一步處理你的回報') ;
+                window.alert('檢舉成功，我們將進一步處理你的回報') ;
+            } else {
+                window.alert('您已取消檢舉') ;
+            }
+        };
+        button.addEventListener('click', showAElement);
+    </script>
+    
+    
+    
+</head>
+<body>
+    <header class="tittle" >
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+            <a href="index.html" style="text-decoration:none;">
+                <div class="shop">
+                    <img src="../assets/image/puzzle.png" class="logo">
+                    <div class="shopname">Gathering</div>
+                </div>
+            </a>
+            <a href="pay.html" style="text-decoration:none;">
+                <div>
+                    <div class="tbutton2">
+                        <img src="../assets/image/carts.png" class="timg2">
+                    </div>
+                
+                </div>
+            </a>
+            <div class="tbutton3">
+                <img src="../assets/image/search.png" class="timg3">
+                <input type="text" class="search" value="請輸入關鍵字">
+            </div>
+            
+            <div class="dropdown">
+                <p>關於</p>
+                <div class="dropdown-content">
+                    <a href="introduce.html" style="text-decoration:none;">商店</a>
+                    <a href="engineers.html" style="text-decoration:none;">工程師介紹</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>類別</p>
+                <div class="dropdown-content">
+                    <a href="Tom_Parker.html"style="text-decoration:none;">Tom Parker</a>
+                    <a href="Antelope.html"style="text-decoration:none;">Antelope</a>
+                    <a href="Martin_Forward.html"style="text-decoration:none;">Martin Handford</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>會員</p>
+                <div class="dropdown-content">
+                    <a href="login.html">登入/註冊</a>
+                    <a href="member.html">會員資訊</a>
+                    <a href="collect.html">我的收藏</a>
+                </div>
+            </div>
+            <a href="questions.html" style="text-decoration:none;">
+                <div class="dropdown">
+                    <p>常見問題</p>
+                </div>
+            </a>
+    </header>
+
+    <article>
+        <section>
+            <div class="product">
+            
+                <!--圖片輪轉-->
+                <ul class="slides">
+                    <input type="radio" id="control-1" name="control" checked>
+                    <input type="radio" id="control-2" name="control">
+                    <input type="radio" id="control-3" name="control">
+                
+                    <div class="navigator slide-1">
+                    <label for="control-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                    </div>
+                
+                    <div class="navigator slide-2">
+                    <label for="control-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                    </div>
+                
+                    <div class="navigator slide-3">
+                    <label for="control-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </label>
+                    <label for="control-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </label>
+                    </div>
+
+                    <!--圖片輪轉:需更改圖片-->
+                    <li class="slide"><img src="../assets/image/wally02.png" alt="暗夜迷蹤" width="480px" style="display:block; margin:10px 100px;"></li>
+                    <li class="slide"><img src="../assets/image/wally002.png" alt="暗夜迷蹤" width="480px" style="display:block; margin:10px 100px;"></li>
+                    <li class="slide"><img src="../assets/image/wally0002.png" alt="暗夜迷蹤" width="480px" style="display:block; margin:10px 100px;"></li>
+                
+                    <div class="controls-visible">
+                    <label for="control-1"></label>
+                    <label for="control-2"></label>
+                    <label for="control-3"></label>
+                    </div>
+                </ul>
+
+                <div class="tstyle">
+                    <p>
+                        商品須知 :<br>
+                        1.請勿使用硬質清潔刷具及清潔劑清洗表面，<br>
+                        以免造成產品損傷。<br>
+                        2.商品尺寸及顏色可能會與圖片有微小差異，<br>
+                        請以實際商品為主。<br>
+                        3.本產品適用年齡：14歲以上。<br>
+                        4.本產品為平面拼圖，不含框及掛勾。<br>       
+                    </p>
+                </div>
+            </div>
+
+            <!--商品介紹 需更改文字-->
+            <div class="order"> 
+                <h2 style=" margin: 10% 0px">where’s wally?-海盜船</h2>     
+                <p style="display: inline-block;">
+                    結合歷史、地理、文學、電影等主題，<br>
+                    最驚奇的險旅程、最奇幻的想像國度，<br>
+                    在錯綜複雜的趣味圖像中，享受尋找的樂趣！<br> 
+                </p>                 
+                <hr>
+                <!--庫存須隨著購買變動-->
+                <p >庫存: 999</p>                
+                <h2>$2000</h2> 
+                <!--購物數量隨著按鈕的增減變動-->
+                <div>
+                    <input type="button"  class="sym" value="-" onclick="add(value)" style="cursor:pointer;">
+                    <input type="text" id="text"  class="num" value="1">
+                    <input type="button"  class="sym" value="+" onclick="add(value)" style="cursor:pointer;"><br>
+                    <script type="text/javascript">
+                        function add(value){
+                            var  x=document.getElementById("text");
+                            if(value=="+"){
+                             var  x=document.getElementById("text");
+                            var  a= x.value;
+                            a++;
+                            x.value=a;
+                            }
+                            if(value=="-" && x.value>0){
+                             var  x=document.getElementById("text");
+                            var  a= x.value;
+                            a--;
+                            x.value=a;
+                            }
+                        }
+                    </script>
+                    <input type="submit"  class="shop2" value="加入購物車" style="cursor:pointer;">
+              </div>
+            </div>
+
+            <!--廣告-->
+            <img src="../assets/image/ad06.png" alt="Ad" width="100%">
+
+            <!--評論-->
+            <form class="comment"> 
+                <fieldset>
+                <legend style="text-align: center; border-style:double ;">COMMENT</legend>       
+                    名字: <br><input type="text" placeholder="Name" style="width: 100%; height: 30px;"><br>
+                    郵件: <br><input type="text" placeholder="Mail" style="width: 100%; height: 30px;"><br>
+                    商品價值:<br>
+                    <div class="star">
+                        <input type="radio" name="item" id="item01" checked />
+                        <label class="star-item" for="item01"></label>
+                        <input type="radio" name="item" id="item02" />
+                        <label class="star-item" for="item02"></label>
+                        <input type="radio" name="item" id="item03" />
+                        <label class="star-item" for="item03"></label>
+                        <input type="radio" name="item" id="item04" />
+                        <label class="star-item" for="item04"></label>
+                        <input type="radio" name="item" id="item05" />
+                        <label class="star-item" for="item05"></label>
+                    </div><br>
+                    意見標題: <br><input type="text" placeholder="title" style="width: 100%; height: 30px;"><br>
+                    意見反饋: <br><textarea name="feeback" placeholder="你的意見對我們來說很重要，任何意見都可以回饋給我們呦" cols="30" rows="10" style="width: 100%;"></textarea>
+                    <input type="button"  style="float: right;  background-color: black; color: white; margin: 10px; padding-left: 15px; padding-right: 15px; font-size: 20px; border-radius: 10px 10px; cursor:pointer;" value="送出">
+                    <input type="submit"  style="float: right;  background-color: black; color: white; margin: 10px; padding-left: 15px; padding-right: 15px; font-size: 20px; border-radius: 10px 10px; cursor:pointer;"  value="重寫">
+                </fieldset>
+            </form>
+
+            <!--顧客已評論-->
+            <div class="Review">  
+                <h2 style="text-align: center;">-Review-</h2>  
+                <div class="ratings">
+                    <div class="empty_star">★★★★★</div>
+                    <div class="full_star">★★★★★</div>
+                </div>   
+                <h4>拼圖超好看</h4>
+                <p>-貓咪 留言於 12/28 10:24</p>
+                <p>在拼的過程中，一度想要放棄，但拼完超值得!!!</p>
+                <a href="#" onclick="showAElement()" id="report" style="float: right; background-color: black; border-radius: 10px 10px; padding: 5px; color: white;" >檢舉內容</a><br>
+                <hr>
+
+                <div class="ratings">
+                    <div class="empty_star">★★★★★</div>
+                    <div class="full_star2">★★★★★</div>
+                </div>   
+                <h4>實物與圖片相符</h4>
+                <p>-上班族 留言於 12/28 10:24</p>
+                <p>拿到商品完整，就是寄送商品有點久，扣分!</p>
+                <a href="#" onclick="showAElement()" id="report" style="float: right; background-color: black; border-radius: 10px 10px; padding: 5px; color: white;" >檢舉內容</a><br>
+                <hr>
+
+                <div class="ratings">
+                    <div class="empty_star">★★★★★</div>
+                    <div class="full_star3">★★★★★</div>
+                </div>   
+                <h4>貴死人了</h4>
+                <p>-奧客 留言於 12/28 10:24</p>
+                <p>不明白他的價格為甚麼那麼貴，明明不值這個價</p>
+                <a href="#" onclick="showAElement()" id="report" style="float: right; background-color: black; border-radius: 10px 10px; padding: 5px; color: white;" >檢舉內容</a><br>
+                <hr>
+
+                <div class="ratings">
+                    <div class="empty_star">★★★★★</div>
+                    <div class="full_star4">★★★★★</div>
+                </div>   
+                <h4>拼圖可以買</h4>
+                <p>-美食頻論家 留言於 12/28 10:24</p>
+                <p>美中不足在於不能吃</p>
+                <a href="#" onclick="showAElement()" id="report" style="float: right; background-color: black; border-radius: 10px 10px; padding: 5px; color: white;" >檢舉內容</a><br>
+                <hr>
+
+            </div>
+
+            <!--熱銷商品-->
+            <div class="like"> 
+                <h2 style="text-align: center;">-Best Sells-</h2>  
+                <div class="card" style="width: 18rem;">
+                    <a href="tom03.html"><img class="card-img-top" src="../assets/image/tom0003.png" style="width: 250px; height: 230px;"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">台北地圖</h5>
+                      <p class="card-text">熱銷排名第一</p>
+                      <a href="tom03.html" class="btn btn-primary">點擊去商品介面</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="antelope05.html"><img class="card-img-top" src="../assets/image/antelope05.png" style="width: 250px; height: 230px;"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Pablo Picasso In His Studio</h5>
+                      <p class="card-text">熱銷排名第二</p>
+                      <a href="antelope05.html" class="btn btn-primary">點擊去商品介面</a>
+                    </div>
+                </div>
+        </section>
+    </article>
+
+    <div class="gototop" id="BackTop">
+        <p>回頂端</p>
+        <img src="../assets/image/puzzle.png" class="gototopp">
+    </div>
+</body>
+    <footer> 
+        <p>© 2022 by Gathering</p>
+    </footer>
+</html>

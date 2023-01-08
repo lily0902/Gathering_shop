@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="../assets/css/questions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <!-- 最上面很粗的那條 -->
+    <header class="tittle" >
+        <!-- 右上角的會員按鈕 -->
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <!-- 左上角的Logo跟gathering -->
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        <!-- 購物車按鈕 -->
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <!-- 搜尋欄 -->
+        <div class="tbutton3">
+            <!-- 搜尋按鈕 -->
+            <img src="../assets/image/search.png" class="timg3">
+            <!-- 輸文字的框框 -->
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        <!-- 下拉選單 -->
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+              <a href="introduce.html">商店</a>
+              <a href="engineers.html">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+              <a href="Tom_Parker.html">Tom Parker</a>
+              <a href="Antelope.html">Antelope</a>
+              <a href="Martin_Forward.html">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+              <a href="register.html">登入/註冊</a>
+              <a href="member.html">會員資訊</a>
+              <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+    </header>
+    <h1 style="text-align:center; font-size:50px;">常見問題</h1>
+        <div class="line"></div>
+        <div class="orderarea">
+           <div style="left:-250px; width:1000px; top:40px;">
+               <div >
+                   <p>Q1:可以退換貨嗎?</p>
+                   <P>A1:可以，退換貨時請退換貨時請保持商品及包裝袋包裝完整。</P>
+               </div>
+               <hr>
+               <div >
+                    <p>Q2:是否訂購成功?</p>
+                    <P>A2:訂單成立後，系統會發送『訂單確認』電子郵件給您，確認訂單詳細資料，包括訂購明細和收件資訊。</P>
+                </div>
+                <hr>
+                <div >
+                    <p>Q3:拼圖不見可以單買嗎?</p>
+                    <P>A3:可以，請跟客服人員聯絡。</P>
+                </div>
+                <hr>
+                <div >
+                    <p>Q4:多久會出貨?</p>
+                    <P>A4:下訂單24小時內。</P>
+                </div>
+                <hr>
+                <div>
+                    <p style="margin-bottom:30px;">聯絡資訊:</p>
+                    <a href="https://www.instagram.com/cycuim/"><img src="../assets/image/instagram.png" style="height:50px; top:-10px; margin-right:10px;"></a>
+                    <a href="https://www.facebook.com/cyimsa"><img src="../assets/image/facebook.png" style="height:50px; top:-10px; margin-right:10px;"></a>
+                    <a href="mailto:cyimsa@yahoo.com.tw"><img src="../assets/image/gmail.png" style="height:60px; top:-5px;"></a>
+                    
+                </div>
+                <hr>
+        </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商店介紹</title>
+    <link rel="stylesheet" href="../assets/css/introduce.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="../assets/image/puzzle.png">
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('cs');                
+            })
+        })
+    </script>
+    <script>
+        $(function(){
+            $('#BackTop').click(function(){ 
+                $('html,body').animate({scrollTop:0}, 333);
+            });
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 300 ){
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+</head>
+<body>
+    <header class="tittle" >
+        <a href="login.html" style="text-decoration:none;">
+            <div class="tbutton1">
+                <img src="../assets/image/profile.png" class="timg1">
+            </div>
+        </a>
+        <a href="index.html" style="text-decoration:none;">
+            <div class="shop">
+                <img src="../assets/image/puzzle.png" class="logo">
+                <div class="shopname">Gathering</div>
+            </div>
+        </a>
+        <a href="pay.html" style="text-decoration:none;">
+            <div>
+                <div class="tbutton2">
+                    <img src="../assets/image/carts.png" class="timg2">
+                </div>
+            
+            </div>
+        </a>
+        <div class="tbutton3">
+            <img src="../assets/image/search.png" class="timg3">
+            <input type="text" class="search" value="請輸入關鍵字">
+        </div>
+        
+        <div class="dropdown">
+            <p>關於</p>
+            <div class="dropdown-content">
+                <a href="introduce.html" style="text-decoration:none;">商店</a>
+                <a href="engineers.html" style="text-decoration:none;">工程師介紹</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>類別</p>
+            <div class="dropdown-content">
+                <a href="Tom_Parker.html"style="text-decoration:none;">Tom Parker</a>
+                <a href="Antelope.html"style="text-decoration:none;">Antelope</a>
+                <a href="Martin_Forward.html"style="text-decoration:none;">Martin Handford</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>會員</p>
+            <div class="dropdown-content">
+                <a href="login.html">登入/註冊</a>
+                <a href="member.html">會員資訊</a>
+                <a href="collect.html">我的收藏</a>
+            </div>
+        </div>
+        <a href="questions.html" style="text-decoration:none;">
+            <div class="dropdown">
+                <p>常見問題</p>
+            </div>
+        </a>
+</header>
+<div class="gototop" id="BackTop">
+    <p>回頂端</p>
+    <img src="../assets/image/puzzle.png" class="gototopp">
+</div>
+<body>
+    <h1 style="background-color: black; color: white; width: 600px; text-align: center; left: 30%; margin-top: 50px; border-radius: 20px 20px; font-size: 50px;">About Gathering</h1>
+    <div class="intro">
+        <div class="card2">
+          <img src="../assets/image/Gathering.jpg" style="width: 430px;"/>
+        </div>
+        <div class="tex">
+          <h1 style="padding-bottom: 20px;">Gathering</h1>
+          <p>Gathering是集會的意思，</p>
+          <p>但也隱含了收穫、聚集之意。</p>
+          <p>而拼圖不只可以多人遊玩,</p>
+          <p>也可以一個人探索,</p>
+          <p>在拼的過程者，</p>  
+          <p>我們也可以藉由專注，</p>
+          <p>默默探索自己,</p>
+          <p>我們也將透過故事的方式帶你看拼圖,</p>
+          <p>讓收藏更具有意義。</p>
+        </div>
+    </div>
+    
+    <footer><p> © 2022 by Gathering</p></footer>
+</body>
+</html>
